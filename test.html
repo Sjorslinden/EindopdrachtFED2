@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>QuipoJS example</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<a href="http://www.studioquipo.com">Link to Www.StudioQuipo.Com</a>
+	<script src="quipo.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('a').tap(function(event){
+				alert('You just clicked a link, and because of preventDefault, you are not going to studioquipo.com');
+				event.preventDefault();
+			});
+		});
+	</script>
+</body>
+</html>
